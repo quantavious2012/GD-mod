@@ -1,17 +1,12 @@
 {
-	"geode": "$GEODE_VERSION",
+	"geode": "3.0.0-beta.1",
 	"gd": {
-		"win": "2.2081",
-		"android": "2.2081",
-		"mac": "2.2081",
-		"ios": "2.2081"
+		"win": "2.204",
+		"android": "2.204"
 	},
-	"id": "$MOD_ID",
-	"name": "$MOD_NAME",
-	"version": "$MOD_VERSION",
-	"developer": "$MOD_DEVELOPER",
-	"description": "$MOD_DESCRIPTION",
-	"dependencies": {
-		"geode.node-ids": ">=v1.23.3"
-	}
+	"id": "quantavious.testmod",
+	"name": "My First Mod",
+	"developer": "Quantavious",
+	"version": "v1.0.0",
+	"description": "Building a mod on my phone!"
 }
