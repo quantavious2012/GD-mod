@@ -1,4 +1,5 @@
 name: Build Geode Mod
+
 on:
   workflow_dispatch:
   push:
@@ -24,6 +25,5 @@ jobs:
       - name: Build Mod
         uses: geode-sdk/build-geode-mod@main
         with:
-          bindings-update: false
-          combine: true
           target: ${{ matrix.config.target }}
+          combine: true
