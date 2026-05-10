@@ -1,12 +1,13 @@
 cmake_minimum_required(VERSION 3.21)
 
+# Keep C++20 but add the fix for the {fmt} library
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(quantavious2012.test_mod VERSION 1.0.0)
 
-# Helps fix the {fmt} library errors on Android
-add_definitions(-DFMT_HEADER_ONLY)
+# This line is CRITICAL to fix the error in your last screenshot
+add_definitions(-DFMT_USE_CONSTEXPR=0 -DFMT_HEADER_ONLY)
 
 set(SOURCES src/main.cpp)
 
