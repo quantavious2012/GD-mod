@@ -7,9 +7,6 @@ struct MyMod : Modify<MyMod, MenuLayer> {
     bool init() {
         if (!MenuLayer::init()) return false;
         
-        // This version doesn't use the 'fmt' library, so it won't crash the build
-        geode::log::debug("Mod loaded successfully!");
-        
         return true;
     }
 };
