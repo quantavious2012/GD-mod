@@ -3,13 +3,12 @@
 
 using namespace geode::prelude;
 
-class $modify(MenuLayer) {
+struct MyMenuLayer : Modify<MyMenuLayer, MenuLayer> {
     bool init() {
-        if (!MenuLayer::init()) {
-            return false;
-        }
+        if (!MenuLayer::init()) return false;
 
-        log::info("Hello from Android!");
+        log::info("Hello from Geode Android!");
+
         return true;
     }
 };
