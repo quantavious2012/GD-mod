@@ -1,9 +1,11 @@
 {
-	"geode": "3.0.0-beta.1",
-	"gd": "2.206",
-	"version": "1.0.0",
-	"id": "quantavious2012.test_mod",
-	"name": "My Mod",
-	"developer": "quantavious2012",
-	"description": "First mod"
+    "geode": "4.0.0",
+    "gd": {
+        "android": "2.207"
+    },
+    "version": "1.0.0",
+    "id": "quantavious2012.test_mod",
+    "name": "My Mod",
+    "developer": "quantavious2012",
+    "description": "First mod"
 }
