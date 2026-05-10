@@ -15,4 +15,7 @@ jobs:
       - name: "Build Mod"
         uses: geode-sdk/build-geode-mod@main
         with:
+          # This specific combination usually bypasses the platform error
           target: "Android"
+          build-config: "Release"
+          combine: true
