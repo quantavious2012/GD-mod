@@ -5,8 +5,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(test_mod VERSION 1.0.0)
 
-# We are telling the computer EXACTLY where the file is
-set(SOURCES src/main.cpp)
+set(SOURCES main.cpp)
 
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
 
@@ -16,4 +15,6 @@ endif()
 
 add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
 
-setup_geode_mod(${quantavious_2012.test.mod})
+target_link_libraries(${PROJECT_NAME} libgeode)
+
+setup_geode_mod(quantavious2012.test_mod)
