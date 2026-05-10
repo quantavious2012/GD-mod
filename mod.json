@@ -1,12 +1,9 @@
 {
-	"geode": "3.0.0-beta.1",
-	"gd": {
-		"win": "2.204",
-		"android": "2.204"
-	},
-	"id": "quantavious.testmod",
-	"name": "My First Mod",
-	"developer": "quantavious",
-	"version": "v1.0.0",
-	"description": "building a mod on my phone!"
+	"geode": "v3.0.0-beta.1",
+	"gd": "2.206",
+	"version": "1.0.0",
+	"id": "quantavious2012.test_mod",
+	"name": "My Mod",
+	"developer": "quantavious2012",
+	"description": "My first mod"
 }
