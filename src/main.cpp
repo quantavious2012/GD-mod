@@ -7,7 +7,7 @@ struct MyMod : Modify<MyMod, MenuLayer> {
     bool init() {
         if (!MenuLayer::init()) return false;
         
-        log::info("Mod is alive!");
+        log::info("Mod loaded successfully!");
         
         return true;
     }
