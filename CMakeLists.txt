@@ -17,4 +17,4 @@ add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
 
 target_link_libraries(${PROJECT_NAME} libgeode)
 
-setup_geode_mod(${PROJECT_NAME})
+setup_geode_mod(quantavious2012.test_mod)
