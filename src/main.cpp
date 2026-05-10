@@ -3,12 +3,12 @@
 
 using namespace geode::prelude;
 
-struct MyMenuLayer : Modify<MyMenuLayer, MenuLayer> {
+struct MyMod : Modify<MyMod, MenuLayer> {
     bool init() {
         if (!MenuLayer::init()) return false;
-
-        log::info("Hello from Geode Android!");
-
+        
+        log::info("Mod loaded successfully!");
+        
         return true;
     }
 };
