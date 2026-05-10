@@ -15,7 +15,4 @@ jobs:
       - name: "Build Mod"
         uses: geode-sdk/build-geode-mod@main
         with:
-          # Changing this to a list format ensures the action 
-          # passes the --platform flag correctly to the CLI.
-          platforms: "android"
-          combine: true
+          target: "Android"
